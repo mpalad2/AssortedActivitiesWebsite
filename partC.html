@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Part C</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class = "pages header">
+		<h1>Homework 4</h1>
+		<h2>Part C - Matching Game</h2>
+	</div>
+	
+	
+	<audio id= "wrongAnswer">
+		<source src="wrongNoise.mp3">
+	</audio>
+	
+	<audio id= "rightAnswer">
+		<source src="rightNoise.mp3">
+	</audio>
+	
+	<audio id= "loseReply">
+		<source src="loseNoise.mp3">
+	</audio>
+	
+	<audio id= "winReply">
+		<source src="winNoise.mp3">
+	</audio>
+	
+	<div class = "clearfix center">
+		<div class = "leftSide">
+			<h2 id = "response" class = "whiteColor">Do you want to match <br />8, 10, or 12 pairs?</h2>
+			<h3 id = "timeLimit">-</h3>
+			<input type="text" name="picNum" id = "picNum" size="8" style="text-align:center">
+			<br />
+			<br />
+			<button type = "button" id = "button" onclick = "playGame()">Start Game</button>
+			<h2 class = "whiteColor">How to Play</h2>
+			<table>
+				<tr class  = "whiteColor">
+					<td>You can choose to match 8, 10, or 12 pairs.</td>
+				</tr>
+				<tr class = "whiteColor">
+					<td>The time and difficulty increases when you choose to 
+						play with more and more pairs.</td>
+				</tr>
+				<tr class = "whiteColor">
+					<td>When you start the game, you will have a few seconds to memorize 
+						the areas the cards are in before the images disappear.</td>
+				</tr>
+				<tr class = "whiteColor">
+					<td>Matched pairs will remain on screen.</td>
+				</tr>
+				<tr class = "whiteColor">
+					<td>If the current cards aren't a match, please allow them to disappear 
+						before you select another pair.</td>
+				</tr>
+				<tr class = "whiteColor">
+					<td>Match all cards with their pairs before the time limit ends to win!</td>
+				</tr>
+			</table>
+			<h3>Have fun and good luck!!</h3>
+			<!--
+			FOR TESTING PURPOSES ONLY
+			<button onclick="hideCards()">Hide Cards</button>
+			<button onclick="showCards()">Show Cards</button>
+			-->
+			<br />
+			<br />
+		</div>
+		
+		<div class = "rightSide">
+			<h4 id = "note">
+				The matching cards game will <br />appear here when you start the game.
+			</h4>
+			<h3 id = "stopwatch">-</h3>
+			<h3 id = "matches">-</h3>
+			<h4 id = "wrongMatch">-</h4>
+			<table id = "picTable" class = "center">
+			</table>
+		</div>
+	</div>
+	
+	<br />
+	<script src = "partC_script.js"></script>
+	
+	
+	<div class = "pages">
+		<a href = "index.html">Index</a>
+		<br />
+		<a href = "partA.html">Part A</a>
+		<a href = "partB.html">Part B</a>
+		<p>
+		  <a href="https://validator.w3.org/check?uri=referer"><img
+			  src="w3check.png"
+			  alt="Valid XHTML 1.0!" height="31" width="88" class = "reg"/></a>
+		</p>
+	</div>
+</body>
+</html>

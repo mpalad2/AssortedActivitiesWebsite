@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Part B</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload = "currentTime()">
+	<div class = "pages header">
+		<h1>Homework 4</h1>
+		<h2>Part B - Guessing Game</h2>
+		<h2 id = "currentTime">-</h2>
+	</div>
+	
+	<audio id= "wrongAnswer">
+		<source src="wrongNoise.mp3">
+	</audio>
+	
+	<audio id= "rightAnswer">
+		<source src="rightNoise.mp3">
+	</audio>
+	
+	<audio id= "loseReply">
+		<source src="loseNoise.mp3">
+	</audio>
+	
+	<audio id= "winReply">
+		<source src="winNoise.mp3">
+	</audio>
+	
+	<!--
+	FOR TESTING PURPOSES ONLY
+	<h1 id = "showNum">Show randomized number here.</h1>
+	-->
+	
+	<div class = "clearfix center">
+		<div class = "leftSide">
+			<h2 class = "whiteColor">Hello!</h2>
+			<img src="dogthink.jpg" alt = "dogthink"/>
+			<h3 id = "update">I'm thinking of a number between 1 to 100...</h3>
+			<h4 id = "hint">Can you guess it?</h4>
+			<h4 id = "guessesLeft">You have 5 guesses.</h4>
+			<h4 id = "stopwatch">-</h4>
+			
+			<input type="text" name="guess" id = "guess" size="10">
+			<button type = "button" onclick = "guessNum()">Guess</button>
+		</div>
+		<div class = "leftSide">
+			<h2 class = "whiteColor">Results</h2>
+			<h3 id = "interaction"><img src = "goodluckdog.jpg" alt = "goodluckdog" /></h3>
+			<h3 id = "result">No results yet! Go ahead and play!</h3>
+			<h4 id = "answer">-</h4>
+			<h4 id = "end">-</h4>
+			<h4 id = "totalTime">-</h4>
+		</div>
+	</div>
+	
+	<script src = "partB_script.js"></script>
+	
+	<br />
+	<div class = "pages">
+		<a href = "index.html">Index</a>
+		<br />
+		<a href = "partA.html">Part A</a>
+		<a href = "partC.html">Part C</a>
+		<p>
+		  <a href="https://validator.w3.org/check?uri=referer"><img
+			  src="w3check.png"
+			  alt="Valid XHTML 1.0!" height="31" width="88" class = "reg"/></a>
+		</p>
+	</div>
+</body>
+</html>
