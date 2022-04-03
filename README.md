@@ -3,3 +3,5 @@ Assignment for Web Programming with a main page and three subpages - reporting p
 
 This is a website created as an assignment for web programming in Fall 2020. It has an index and three different activities. 
 One is a reporting payroll, another is playing a guess the numbers game with five chances, and the final one is a matching game with a timer.
+
+DISCLAIMER: The images for the matching game do not belong to me; they belong to a game called Genshin Impact.
